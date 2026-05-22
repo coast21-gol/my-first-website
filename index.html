@@ -579,13 +579,16 @@
   /* ===== Partners ===== */
   .partners{padding:78px 0 86px;background:var(--surface-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
   .partners .sec-head{margin-bottom:38px;}
-  .partners-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:920px;margin:0 auto;}
-  .partner-card{background:#fff;border-radius:14px;padding:30px 22px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:170px;box-shadow:0 8px 24px rgba(0,0,0,.35);transition:transform .25s ease;}
-  .partner-card:hover{transform:translateY(-4px);}
+  .partners-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;max-width:960px;margin:0 auto;}
+  .partner-card{background:#fff;border-radius:14px;padding:26px 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:150px;box-shadow:0 8px 24px rgba(0,0,0,.35);transition:transform .25s ease, box-shadow .25s ease;}
+  .partner-card:hover{transform:translateY(-5px);box-shadow:0 14px 36px rgba(0,0,0,.45);}
   .partner-name{font-family:'Fraunces',serif;font-weight:600;color:#0f1115;font-size:1.05rem;line-height:1.35;letter-spacing:-0.01em;}
   .partner-sub{margin-top:8px;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#5a6270;font-weight:700;}
-  @media(max-width:760px){
-    .partners-grid{grid-template-columns:1fr;max-width:380px;}
+  @media(max-width:900px){
+    .partners-grid{grid-template-columns:repeat(2,1fr);max-width:540px;}
+  }
+  @media(max-width:500px){
+    .partners-grid{grid-template-columns:repeat(2,1fr);max-width:360px;gap:14px;}
   }
 
   footer{background:var(--surface-2);border-top:1px solid var(--line);padding:52px 0 34px;}
@@ -986,26 +989,74 @@
       <h2 id="partners-heading">Memberships &amp; <em>partnerships.</em></h2>
     </div>
     <div class="partners-grid">
+
+      <!-- Hispanic Chamber Metro Orlando -->
       <div class="partner-card is-orlando reveal">
-        <div class="p-accent" aria-hidden="true"></div>
-        <div class="p-name">Hispanic Chamber of Metro Orlando</div>
-        <div class="p-tag">Proud Member</div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 110" style="width:100%;max-width:200px;height:auto;">
+          <!-- Background -->
+          <rect width="220" height="110" rx="8" fill="white"/>
+          <!-- Orange arc/swoosh top -->
+          <path d="M0 0 Q110 30 220 0 L220 18 Q110 48 0 18 Z" fill="#E8500A"/>
+          <!-- Green swoosh -->
+          <path d="M0 18 Q110 48 220 18 L220 34 Q110 64 0 34 Z" fill="#2E7D32"/>
+          <!-- Main logo text area -->
+          <text x="110" y="60" text-anchor="middle" font-family="Georgia,serif" font-size="11" font-weight="700" fill="#1A1A2E" letter-spacing="0.5">HISPANIC CHAMBER</text>
+          <text x="110" y="74" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#E8500A" font-weight="700" letter-spacing="1">OF METRO ORLANDO</text>
+          <!-- Stars decoration -->
+          <text x="110" y="92" text-anchor="middle" font-size="10" fill="#E8500A">★ ★ ★</text>
+        </svg>
       </div>
+
+      <!-- Brevard Hispanic Chamber -->
       <div class="partner-card is-brevard reveal">
-        <div class="p-accent" aria-hidden="true"></div>
-        <div class="p-name">Brevard Hispanic Chamber of Commerce</div>
-        <div class="p-tag">Proud Member</div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 110" style="width:100%;max-width:200px;height:auto;">
+          <rect width="220" height="110" rx="8" fill="white"/>
+          <!-- Shield shape -->
+          <path d="M110 8 L142 22 L142 54 Q142 78 110 92 Q78 78 78 54 L78 22 Z" fill="#4A1942"/>
+          <path d="M110 14 L136 26 L136 54 Q136 74 110 86 Q84 74 84 54 L84 26 Z" fill="#6B2D5E"/>
+          <!-- BH initials -->
+          <text x="110" y="58" text-anchor="middle" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#F5C842">BH</text>
+          <!-- Text below -->
+          <text x="110" y="100" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="700" fill="#4A1942" letter-spacing="0.3">BREVARD HISPANIC CHAMBER</text>
+        </svg>
       </div>
+
+      <!-- LegalShield -->
       <div class="partner-card is-legal reveal">
-        <div class="p-accent" aria-hidden="true"></div>
-        <div class="p-name">LegalShield</div>
-        <div class="p-tag">Independent Associate</div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 110" style="width:100%;max-width:200px;height:auto;">
+          <rect width="220" height="110" rx="8" fill="white"/>
+          <!-- Shield -->
+          <path d="M110 8 L148 24 L148 58 Q148 86 110 100 Q72 86 72 58 L72 24 Z" fill="#5B2D8E"/>
+          <path d="M110 16 L142 30 L142 58 Q142 82 110 94 Q78 82 78 58 L78 30 Z" fill="#7B3FB5"/>
+          <!-- Check mark inside shield -->
+          <polyline points="92,56 104,68 128,44" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- LegalShield text -->
+          <text x="110" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#5B2D8E" letter-spacing="1">LegalShield</text>
+        </svg>
       </div>
+
+      <!-- QuickBooks ProAdvisor Gold -->
       <div class="partner-card is-qb reveal">
-        <div class="p-accent" style="background:linear-gradient(90deg,#2CA01C,#0077C5);"></div>
-        <div class="p-name">QuickBooks<br>ProAdvisor</div>
-        <div class="p-tag" style="color:#0077C5;">Gold Certified</div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 190" style="width:auto;max-width:130px;height:auto;">
+          <!-- Shield shape -->
+          <path d="M80 4 L152 28 L152 100 Q152 158 80 186 Q8 158 8 100 L8 28 Z" fill="#1B2A4A"/>
+          <path d="M80 12 L144 34 L144 100 Q144 152 80 178 Q16 152 16 100 L16 34 Z" fill="#243560"/>
+          <!-- QB green circle -->
+          <circle cx="80" cy="58" r="28" fill="#2CA01C"/>
+          <!-- QB logo text -->
+          <text x="80" y="65" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="900" fill="white">qb</text>
+          <!-- quickbooks small text -->
+          <text x="80" y="95" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" font-weight="600" fill="#A8BDD8" letter-spacing="1">quickbooks</text>
+          <!-- ProAdvisor text -->
+          <text x="80" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="white" letter-spacing="0.5">ProAdvisor</text>
+          <!-- Gold band -->
+          <rect x="16" y="120" width="128" height="30" rx="4" fill="#F5C842"/>
+          <text x="80" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="900" fill="#1B2A4A" letter-spacing="2">GOLD</text>
+          <!-- Stars -->
+          <text x="80" y="165" text-anchor="middle" font-size="16" fill="#F5C842">★ ★</text>
+        </svg>
       </div>
+
     </div>
     <p class="partners-note">Proudly involved with the Central Florida business community.</p>
   </div>
