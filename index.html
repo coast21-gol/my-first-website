@@ -679,6 +679,26 @@
 
   /* ---------- risk tag ---------- */
   .risk-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(33,184,166,.1);border:1px solid rgba(33,184,166,.25);color:var(--teal);font-size:13.5px;font-weight:600;padding:8px 16px;border-radius:100px;margin-bottom:20px;}
+
+  /* ---------- mid cta ---------- */
+  .mid-cta{background:linear-gradient(135deg,rgba(33,184,166,.12),rgba(134,162,236,.08));border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:64px 0;}
+  .mid-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;}
+  .mid-cta-inner h2{font-size:clamp(1.7rem,3vw,2.4rem);margin-bottom:8px;}
+  .mid-cta-inner p{color:var(--muted);font-size:17px;max-width:520px;}
+  @media(max-width:700px){.mid-cta-inner{flex-direction:column;text-align:center;}}
+
+  /* ---------- lead magnets ---------- */
+  .lead-mag{background:var(--surface-2);}
+  .lm-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:860px;margin:0 auto;}
+  .lm-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:38px 34px;display:flex;flex-direction:column;gap:16px;}
+  .lm-icon{width:58px;height:58px;border-radius:15px;background:rgba(33,184,166,.13);color:var(--teal);display:flex;align-items:center;justify-content:center;}
+  .lm-tag{display:inline-flex;align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 12px;border-radius:100px;background:rgba(33,184,166,.13);color:var(--teal);}
+  .lm-card h3{font-size:1.4rem;color:var(--white);}
+  .lm-card p{font-size:15px;color:var(--muted);}
+  .lm-list{list-style:none;display:flex;flex-direction:column;gap:8px;}
+  .lm-list li{font-size:14px;color:var(--text);padding-left:20px;position:relative;}
+  .lm-list li::before{content:"→";position:absolute;left:0;color:var(--teal);font-weight:700;}
+  @media(max-width:700px){.lm-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -692,6 +712,7 @@
       <a href="#process">How It Works</a>
       <a href="#why">Why Us</a>
       <a href="#reviews">Reviews</a>
+      <a href="#resources">Free Resources</a>
       <a href="#team">Team</a>
       <a href="#contact" class="btn btn-teal">Book Free Consult</a>
     </nav>
@@ -704,17 +725,17 @@
   <div class="wrap hero-grid">
     <div>
       <div class="pill reveal" style="--d:.1s">
-  <span class="dot"></span> Now accepting new clients
+  <span class="dot"></span> QuickBooks ProAdvisor Gold Certified
 </div>
-<h1 class="reveal" style="--d:.2s">Your books, finally <em>off your plate.</em></h1>
-<p class="lead reveal" style="--d:.3s">Free consultation + your first month free when you sign on for cleanup or catch-up. Professional bookkeeping for small businesses and dental practices, nationwide.</p>
+<h1 class="reveal" style="--d:.2s">Clean books. Clear numbers.<br><em>Less stress every month.</em></h1>
+<p class="lead reveal" style="--d:.3s">We handle the bookkeeping so small business owners can stop guessing about their numbers and get back to running their business. Monthly support, accurate records, plain-English reports — done for you.</p>
 <div class="hero-cta reveal" style="--d:.4s">
-  <a href="#contact" class="btn btn-teal btn-lg">Get my free consult + 1st month free →</a>
+  <a href="#contact" class="btn btn-teal btn-lg">Book a free consultation →</a>
   <a href="#services" class="btn btn-line">See how it works</a>
 </div>
 <div class="hero-trust reveal" style="--d:.5s">
   <span class="stars">★★★★★</span>
-  <span class="tline">Rated <b>5.0 on Google</b> · QuickBooks ProAdvisor <b>Gold Certified</b></span>
+  <span class="tline">Rated <b>5.0 on Google</b> · <b>QuickBooks ProAdvisor Gold</b> · Serving clients nationwide</span>
 </div>
     </div>
     <div class="hero-visual reveal" style="--d:.3s">
@@ -727,24 +748,24 @@
           <span class="ic" style="background:rgba(33,184,166,.14);color:var(--teal)">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg>
           </span>
-          <div><div class="big">12 hrs</div><div class="sml">saved weekly on average</div></div>
+          <div><div class="big">Gold</div><div class="sml">QuickBooks ProAdvisor Certified</div></div>
         </div>
         <div class="hero-stat">
           <span class="ic" style="background:rgba(134,162,236,.14);color:var(--blue)">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
           </span>
-          <div><div class="big">100%</div><div class="sml">on-time monthly close, every month</div></div>
+          <div><div class="big">6+</div><div class="sml">years serving small businesses</div></div>
         </div>
         <div class="hero-stat">
           <span class="ic" style="background:rgba(33,184,166,.14);color:var(--teal)">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
           </span>
-          <div><div class="big">0</div><div class="sml">April surprises since we started</div></div>
+          <div><div class="big">Free</div><div class="sml">first month on cleanup or catch-up</div></div>
         </div>
       </div>
       <div class="hero-float">
-  <span class="fnum">Free</span>
-  <span>consult +<br>1st month free<br>on cleanup</span>
+  <span class="fnum">$99</span>
+  <span>starting per<br>month</span>
 </div>
     </div>
   </div>
@@ -753,10 +774,10 @@
 <!-- ===== TRUST BAR ===== -->
 <div class="trustbar">
   <div class="wrap">
-    <span><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V6z"/></svg> Woman-owned small business</span>
-    <span><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M5 5l14 14M19 5 5 19"/></svg> 6+ years industry experience</span>
-    <span><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> 100% Remote — work with us from anywhere</span>
-    <span><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V6z"/></svg> Certified QuickBooks ProAdvisor (Gold)</span>
+    <span><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V6z"/></svg> QuickBooks ProAdvisor Gold Certified</span>
+    <span><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M5 5l14 14M19 5 5 19"/></svg> 6+ years of bookkeeping experience</span>
+    <span><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> 100% remote — work with us from anywhere</span>
+    <span><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Woman-owned small business</span>
   </div>
 </div>
 
@@ -771,30 +792,25 @@
     <div class="pain-grid">
       <div class="pain-card reveal">
         <div class="pic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div>
-        <h4>Receipts everywhere</h4>
-        <p>Statements, invoices and receipts piling up with no real system behind them.</p>
+        <h4>No system, just chaos</h4>
+        <p>Statements, invoices, and receipts piling up with no process behind them — and tax season getting closer.</p>
       </div>
       <div class="pain-card reveal">
         <div class="pic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg></div>
-        <h4>No idea if you're profitable</h4>
-        <p>You're busy — but you can't say with confidence whether you're actually making money.</p>
+        <h4>Flying blind on your finances</h4>
+        <p>You're busy and revenue is coming in, but you genuinely don't know if the business is profitable.</p>
       </div>
       <div class="pain-card reveal">
         <div class="pic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="9"/></svg></div>
-        <h4>Nights lost to QuickBooks</h4>
-        <p>Bookkeeping eats the evenings and weekends that should belong to you.</p>
+        <h4>Bookkeeping eating your nights</h4>
+        <p>The average small business owner spends 80+ hours a year on bookkeeping. That's time not spent growing your business.</p>
       </div>
       <div class="pain-card reveal">
         <div class="pic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18v13H3zM3 7l3-4h12l3 4M9 12h6"/></svg></div>
-        <h4>Tax season dread</h4>
-        <p>Every April becomes a frantic scramble to pull a year of mess together.</p>
+        <h4>Dreading every tax season</h4>
+        <p>Scrambling every April to pull together a year of messy records is expensive, stressful, and avoidable.</p>
       </div>
     </div>
-    <div class="pain-stat-bar reveal">
-  <div class="psb-item">
-    <span class="psb-num">80+</span>
-    <span class="psb-label">hours per year the average small business owner spends on bookkeeping</span>
-  </div>
   <div class="psb-divider"></div>
   <div class="psb-item">
     <span class="psb-num">2 weeks</span>
@@ -806,7 +822,7 @@
     <span class="psb-label">in new revenue earned from hours spent wrestling with QuickBooks</span>
   </div>
 </div>
-    <p class="pain-foot reveal">There's a calmer way to run your numbers. <em>Let's get you there.</em></p>
+    <p class="pain-foot reveal">Sound familiar? <em>You're in the right place.</em></p>
   </div>
 </section>
 
@@ -815,14 +831,14 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">What we do</span>
-      <h2>Bookkeeping done right — <em>with a human touch.</em></h2>
-      <p>Clear books, real answers, and a person who actually picks up the phone.</p>
+      <h2>Bookkeeping built for <em>small business owners.</em></h2>
+      <p>Accurate books, clear monthly reports, and a real person you can actually reach. Starting at $99/month.</p>
     </div>
 <div class="pricing-grid">
   <!-- Starter -->
   <div class="price-card reveal">
     <div class="pc-tier">Starter</div>
-    <div class="pc-price"><span class="pc-amt">$99–$250</span><span class="pc-per">/month</span></div>
+    <div class="pc-price"><span class="pc-amt">Starting at $99</span><span class="pc-per">/month</span></div>
     <div class="pc-desc">Perfect for lean operations with straightforward books.</div>
     <ul class="pc-list">
       <li>Up to ~75 transactions/month</li>
@@ -838,8 +854,8 @@
   <div class="price-card featured reveal">
     <div class="pc-badge">Most popular</div>
     <div class="pc-tier">Growth</div>
-    <div class="pc-price"><span class="pc-amt">$300–$700</span><span class="pc-per">/month</span></div>
-    <div class="pc-desc">For businesses ready for full financial visibility.</div>
+    <div class="pc-price"><span class="pc-amt">Custom pricing</span><span class="pc-per"> / scoped to you</span></div>
+    <div class="pc-desc">Full financial visibility for businesses ready to stop guessing and start growing.</div>
     <ul class="pc-list">
       <li>Up to ~200 transactions/month</li>
       <li>Accounts payable &amp; receivable</li>
@@ -848,14 +864,14 @@
       <li>Tax forecasting support</li>
       <li>Priority response</li>
     </ul>
-    <a href="#contact" class="btn btn-teal" style="width:100%;margin-top:auto;">Get my free consult →</a>
+    <a href="#contact" class="btn btn-teal" style="width:100%;margin-top:auto;">Book a free consultation →</a>
   </div>
 
   <!-- Established -->
   <div class="price-card reveal">
-    <div class="pc-tier">Established</div>
-    <div class="pc-price"><span class="pc-amt">$700+</span><span class="pc-per">/month</span></div>
-    <div class="pc-desc">Full-service financial partnership for growing businesses.</div>
+    <div class="pc-tier">Full Service</div>
+    <div class="pc-price"><span class="pc-amt">Custom pricing</span><span class="pc-per"> / scoped to you</span></div>
+    <div class="pc-desc">High-volume, full-service bookkeeping partnership for established and growing businesses.</div>
     <ul class="pc-list">
       <li>High-volume transactions</li>
       <li>Full AP/AR + inventory management</li>
@@ -874,7 +890,7 @@
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18v4H3zM5 11v9M19 11v9M5 20h14M9 11v9M15 11v9M3 7l2-4h14l2 4"/></svg>
   </div>
   <div>
-    <strong>Dental practices:</strong> Inventory tracking &amp; ordering is priced separately per practice. Led by Rocio, our dental industry veteran with 10+ years of hands-on experience. <a href="#contact" style="color:var(--blue);text-decoration:underline;">Ask us about it →</a>
+    <strong>Dental practices:</strong> We offer specialized bookkeeping and inventory tracking for dental offices, led by Rocio — our team member with 10+ years in the dental industry. <a href="#contact" style="color:var(--blue);text-decoration:underline;">Ask us about dental bookkeeping →</a>
   </div>
 </div>
 
@@ -893,8 +909,8 @@
     <div class="step-grid">
       <div class="step reveal">
         <div class="no">01</div>
-        <h4>Free consultation + 1st month free</h4>
-        <p>We hop on a quick, no-pressure call to understand your business and where the books stand today. Sign on for cleanup or catch-up and your first month is on us.</p>
+        <h4>Free 20-minute consultation</h4>
+        <p>We hop on a quick call to understand your business, where the books stand, and whether we're the right fit. No pressure.</p>
       </div>
       <div class="step reveal">
         <div class="no">02</div>
@@ -908,7 +924,20 @@
       </div>
     </div>
     <div class="steps-cta reveal">
-      <a href="#contact" class="btn btn-teal btn-lg">Get my free consult + 1st month free →</a>
+      <a href="#contact" class="btn btn-teal btn-lg">Book your free call →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MID CTA ===== -->
+<section class="mid-cta" id="mid-cta">
+  <div class="wrap">
+    <div class="mid-cta-inner reveal">
+      <div>
+        <h2>Not sure where your books stand?</h2>
+        <p>Book a free 20-minute call. We'll take a look and tell you honestly what needs fixing and what it would cost.</p>
+      </div>
+      <a href="#contact" class="btn btn-teal btn-lg">Book a free call →</a>
     </div>
   </div>
 </section>
@@ -919,7 +948,7 @@
     <div class="sec-head center reveal">
       <span class="eyebrow">Is this a fit?</span>
       <h2>We work best with <em>people like you.</em></h2>
-      <p>We're not for everyone — and that's a good thing. Here's who we're built for.</p>
+      <p>We focus on a small number of clients so we can do exceptional work. Here's who we're best suited for.</p>
     </div>
     <div class="who-grid">
       <div class="who-card reveal">
@@ -951,7 +980,7 @@
         <p>You're good at what you do — bookkeeping isn't it. Hand it off and get your evenings back.</p>
       </div>
     </div>
-    <p class="who-note reveal">Not sure if you're a fit? <a href="#contact" style="color:var(--teal);text-decoration:underline;">Book a free call</a> — we'll tell you honestly.</p>
+    <p class="who-note reveal">Not sure if we're a fit? <a href="#contact" style="color:var(--teal);text-decoration:underline;">Book a free 20-minute call</a> — we'll be straight with you.</p>
   </div>
 </section>
 
@@ -974,19 +1003,19 @@
       <div class="why-points">
         <div class="why-point">
           <div class="pic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V6z"/></svg></div>
-          <div><h4>Personal, not corporate</h4><p>You work directly with us — real people who learn your business and treat it like our own.</p></div>
+          <div><h4>QuickBooks ProAdvisor Gold certified</h4><p>Not just familiar with QuickBooks — certified at the Gold level. Your books are in expert hands.</p></div>
+        </div>
+        <div class="why-point">
+          <div class="pic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <div><h4>A real person, not a portal</h4><p>You work directly with Daniela and Rocio — not a ticket system. When you have a question, you get an answer.</p></div>
         </div>
         <div class="why-point">
           <div class="pic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5M4 19h16M8 16l3-4 3 2 5-7"/></svg></div>
-          <div><h4>Real industry experience</h4><p>Six-plus years across construction and dental — we understand the ups and downs you face.</p></div>
+          <div><h4>Reports you can actually read</h4><p>No jargon, no spreadsheet dumps. Every monthly report is written in plain English so you know exactly where you stand.</p></div>
         </div>
         <div class="why-point">
-          <div class="pic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div>
-          <div><h4>Clarity over jargon</h4><p>We translate the numbers into plain English so you always know exactly where you stand.</p></div>
-        </div>
-        <div class="why-point">
-          <div class="pic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v8M8 12h8"/><circle cx="12" cy="12" r="9"/></svg></div>
-          <div><h4>Flexible pricing</h4><p>One-time cleanup or ongoing monthly support — we scope it to your budget and stage.</p></div>
+          <div class="pic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div><h4>Reliable, consistent monthly support</h4><p>Bookkeeping that happens on a schedule — not scrambled together at the end of the year when the damage is already done.</p></div>
         </div>
       </div>
     </div>
@@ -998,7 +1027,7 @@
   <div class="wrap">
     <div class="sec-head center reveal">
       <span class="eyebrow">Kind words</span>
-      <h2>Local businesses that <em>trust us.</em></h2>
+      <h2>What small business owners <em>say about us.</em></h2>
     </div>
     <div class="rev-grid">
       <div class="rev-card reveal">
@@ -1051,6 +1080,47 @@
           <p itemprop="description">I've spent over a decade in the dentistry field, and my college accounting education adds a unique edge to my financial expertise. I lead our dental inventory tracking and ordering service — keeping practices stocked, organized, and running smoothly. With us, it's not just business; it's personal.</p>
         </div>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LEAD MAGNETS ===== -->
+<section class="lead-mag" id="resources">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Free resources</span>
+      <h2>Not ready to book yet? <em>Start here.</em></h2>
+      <p>Two free tools to help you see exactly where your books stand — no obligation.</p>
+    </div>
+    <div class="lm-grid">
+      <div class="lm-card reveal">
+        <div class="lm-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg>
+        </div>
+        <div class="lm-tag">For small businesses</div>
+        <h3>Free Bookkeeping Health Check</h3>
+        <p>A quick 10-point checklist to find out if your books are clean, current, and ready for tax season — or if there's a problem hiding in your numbers.</p>
+        <ul class="lm-list">
+          <li>Are your accounts reconciled?</li>
+          <li>Can you read your P&amp;L right now?</li>
+          <li>Do you know your cash position?</li>
+        </ul>
+        <a href="#contact" class="btn btn-teal" style="width:100%;">Get the free health check →</a>
+      </div>
+      <div class="lm-card reveal">
+        <div class="lm-icon" style="background:rgba(134,162,236,.13);color:var(--blue);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18v4H3zM5 11v9M19 11v9M5 20h14M9 11v9M15 11v9M3 7l2-4h14l2 4"/></svg>
+        </div>
+        <div class="lm-tag" style="background:rgba(134,162,236,.13);color:var(--blue);">For dental practices</div>
+        <h3>Dental Practice Bookkeeping Checklist</h3>
+        <p>A free checklist built specifically for dental offices — covering the financial and inventory blind spots that most practices don't catch until it's costly.</p>
+        <ul class="lm-list">
+          <li>Are your supply costs tracked monthly?</li>
+          <li>Is your inventory reconciled?</li>
+          <li>Do you have clean monthly reports?</li>
+        </ul>
+        <a href="#contact" class="btn btn-blue" style="width:100%;color:#0C1330;">Get the dental checklist →</a>
+      </div>
     </div>
   </div>
 </section>
@@ -1212,7 +1282,7 @@
     </div>
     <div class="foot-bottom">
       <span>© 2026 Goldmera LLC. All rights reserved.</span>
-      <span>Bookkeeping &amp; dental inventory services · Nationwide · Based in Melbourne, FL</span>
+      <span>Bookkeeping for small businesses &amp; dental practices · Remote, nationwide · Based in Melbourne, FL</span>
     </div>
   </div>
 </footer>
